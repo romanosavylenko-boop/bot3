@@ -17,8 +17,7 @@ from aiogram.types import (
 )
 
 # Токен від @BotFather задається через змінну середовища BOT_TOKEN
-TOKEN = os.environ [9033504163:AAFAYrGLgkS0G3YfS-pTkWZOYs7tYBpD-6w]
-
+TOKEN = "9033504163:AAFAYrGLgkS0G3YfS-pTkWZOYs7tYBpD-6w"
 logging.basicConfig(level=logging.INFO)
 router = Router()
 bot = Bot(token=TOKEN)
