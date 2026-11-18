@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 import sqlite3
 from datetime import datetime
 from aiogram import Bot, Dispatcher, F, Router
@@ -15,12 +16,12 @@ from aiogram.types import (
     ReplyKeyboardMarkup,
 )
 
-# Встав свій токен від @BotFather
-TOKEN = "YOUR_BOT_TOKEN_HERE"
+# Токен береться зі змінної середовища BOT_TOKEN (Railway Variables)
+TOKEN = os.environ["BOT_TOKEN"]
 
 logging.basicConfig(level=logging.INFO)
 router = Router()
-bot = Bot(token=TOKEN)9033504163:AAH9bh8951I_7d-PesDZoCm1AoaqEg9S2m8
+bot = Bot(token=TOKEN)
 
 dp = Dispatcher()
 
